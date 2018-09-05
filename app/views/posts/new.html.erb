@@ -1,0 +1,27 @@
+
+<div class="main">
+
+  
+  <div class="inner-body">
+
+
+    <div class="content">
+
+
+       <%= form_tag("/posts/create", {multipart: true}) do %>
+        
+        <p>タイトル<input name="title" type="text"></p>
+        <p>メイン画像<input name="img_name" type="file"></p>
+        <p>本文<textarea name="text"></textarea></p>
+
+        <input type="submit" value="投稿">
+
+       <% end %>
+
+    </div>
+
+    
+  </div>
+  
+</div>
+

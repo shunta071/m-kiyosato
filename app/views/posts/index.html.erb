@@ -1,0 +1,28 @@
+
+<div class="main">
+  
+  <div class="inner-body">
+    <div class="news_index">
+      
+      <% @posts.each do |post| %>
+        <div class="news_inner">
+          <div class="title">
+            <%= post.title %>
+          </div>
+          <div class="time_stamp">
+            <%= simple_time(post.created_at) %>
+          </div>
+          <div class="news_img">
+            <img src="<%= "/post_images/#{post.img_name}" %>" class="img-responsive" >
+          </div>
+          <div class="content">
+            <%= simple_format(post.text) %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+ 
+  </div>
+  
+</div>
+

@@ -1,0 +1,48 @@
+
+
+<div class="main">
+
+  <img src="<%= asset_path "top.jpg" %>" class="img-responsive">
+  
+  <div class="inner-body">
+  
+    <div class="top_content">
+      
+      <h4 class="top_lead">ようこそ南清里レジャーセンターへ</h4>
+
+      <h5 class="top_lead_text">日帰りで釣りを楽しんだり、オートキャンプで星空を楽しむことのできるキャンプ場です。<br>
+          キャンプ場のすぐそばに小川が流れており水遊びもできます。<br>
+
+          静かな空間で最高のひとときをお過ごしください。
+      </h5>
+
+
+    </div>
+
+
+    <div class="news">
+      <p class="recently">最近の記事</p>
+        <div class="content">
+          <% @posts.first(3).each do |post| %>
+            <%= link_to("/posts/#{post.id}") do %>
+  
+              <div class="news_record">
+                  <img src="<%= "/post_images/#{post.img_name}" %>" class="img-responsive" width="100%">
+                  <div class="news_record_right">
+                    <%= link_to(post.title, "/posts/#{post.id}") %>
+                    <p><%= post.text.truncate(65) %></p>
+                    <p><%= simple_time(post.created_at) %></p>
+                  </div>
+              </div>
+
+            <% end %>
+            
+          <% end %>
+        </div>
+        
+        <a href="../posts/index"><button class="btn btn-default">もっと見る</button></a>
+    </div>
+
+  </div>
+  
+</div>
