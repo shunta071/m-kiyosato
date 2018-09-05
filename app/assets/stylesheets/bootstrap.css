@@ -495,7 +495,7 @@ mark,
 .img-responsive {
   display: block;
   height: auto;
-  width: 200px;
+  max-width: 100%;
 }
 
 .figure {
