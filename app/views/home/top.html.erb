@@ -27,7 +27,7 @@
             <%= link_to("/posts/#{post.id}") do %>
   
               <div class="news_record">
-                  <img src="<%= "/post_images/#{post.img_name}" %>" class="img-responsive" width="100%">
+                  <img src="<%= "/post_images/#{post.img_name}" %>" class="img-responsive_news" width="100%">
                   <div class="news_record_right">
                     <%= link_to(post.title, "/posts/#{post.id}") %>
                     <p><%= post.text.truncate(65) %></p>
