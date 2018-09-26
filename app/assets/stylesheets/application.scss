@@ -13,7 +13,7 @@
  *= require bootstrap
  *= require_tree .
  *= require_self
- 
+
  @import "bootstrap-sprockets";
  @import "bootstrap";
  */
@@ -155,7 +155,7 @@
     margin-top: 2px;
     margin-bottom: 5px;
    }
-  
+
   .record-set {
     display: flex;
     list-style: none;
@@ -209,9 +209,9 @@
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  -webkit-box-shadow: 0 1px 1px #ccc; 
-  -moz-box-shadow: 0 1px 1px #ccc; 
-  box-shadow: 0 1px 1px #ccc;         
+  -webkit-box-shadow: 0 1px 1px #ccc;
+  -moz-box-shadow: 0 1px 1px #ccc;
+  box-shadow: 0 1px 1px #ccc;
 }
 
 .bordered tr:hover {
@@ -220,14 +220,14 @@
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;     
-}    
-  
+  transition: all 0.1s ease-in-out;
+}
+
 .bordered td, .bordered th {
   border-left: 1px solid #ccc;
   border-top: 1px solid #ccc;
   padding: 10px;
-  text-align: left;    
+  text-align: left;
 }
 
 .bordered th {
@@ -238,11 +238,11 @@
   background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
   background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
   background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
-  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
-  -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
-  box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
   border-top: none;
-  text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 
 .bordered-fishing {
@@ -255,9 +255,9 @@
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  -webkit-box-shadow: 0 1px 1px #ccc; 
-  -moz-box-shadow: 0 1px 1px #ccc; 
-  box-shadow: 0 1px 1px #ccc;         
+  -webkit-box-shadow: 0 1px 1px #ccc;
+  -moz-box-shadow: 0 1px 1px #ccc;
+  box-shadow: 0 1px 1px #ccc;
 }
 
 .bordered-fishing tr:hover {
@@ -266,14 +266,14 @@
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;     
-}    
-  
+  transition: all 0.1s ease-in-out;
+}
+
 .bordered-fishing td, .bordered-fishing th {
   border-left: 1px solid #ccc;
   border-top: 1px solid #ccc;
   padding: 10px;
-  text-align: left;    
+  text-align: left;
 }
 
 .bordered-fishing th {
@@ -284,11 +284,11 @@
   background-image:     -ms-linear-gradient(top, #ebf3fc, #CCFFCC);
   background-image:      -o-linear-gradient(top, #ebf3fc, #CCFFCC);
   background-image:         linear-gradient(top, #ebf3fc, #CCFFCC);
-  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
-  -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
-  box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
   border-top: none;
-  text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 
 // 周辺施設ページ
