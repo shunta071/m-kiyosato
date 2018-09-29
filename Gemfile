@@ -73,3 +73,6 @@ gem 'google-analytics-rails'
 
 # AWS S3
 gem "aws-sdk-s3", require: false
+
+# Herokuエラーログ
+gem 'rails_12factor', group: :production
