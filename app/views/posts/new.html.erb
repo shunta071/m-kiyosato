@@ -7,6 +7,14 @@
 
     <div class="content">
 
+      <%# <%= form_with model: @post, local: true  do |form| %> %>
+        <%# <%= form.text_area :title %><br> %>
+        <%# <%= form.text_area :text %><br> %>
+        <%# <%= form.file_field :image %><br> %>
+        <%# <%= form.submit %> %>
+      <%# <% end %> %>
+      
+
 
        <%= form_tag("/posts/create", {multipart: true}) do %>
         

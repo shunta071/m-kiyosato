@@ -19,6 +19,21 @@
  */
 
 // 全ページ共通
+
+html {
+  font-size: 100%;
+ 
+  // 600px以降から、100pxごとに1px大きくなる
+  @media (min-width: 600px) {
+    font-size: calc(112.5% + 4 * (100vw - 600px) / 400)
+  }
+ 
+  // 1,000px以上は、22pxに
+  @media (min-width: 1000px) {
+    font-size: calc(100%)
+  }
+}
+
 .bg-light {
   background-color: #DCF1F2 !important;
 }
@@ -26,6 +41,10 @@
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+
+  // @media (max-width: 800px) {
+  //   font-size: 20px;
+  // }
 }
  .header-logo {
   display: flex;
@@ -55,14 +74,26 @@
    margin-top: 50px;
    margin-bottom: 50px;
    font-weight: bold;
+
+  //  @media (max-width: 800px) {
+  //   font-size: 1.1em;
+  // }
  }
 
  .top_lead_text {
    line-height: 2em;
+
+  //  @media (max-width: 800px) {
+  //   font-size: 1.1em;
+  // }
  }
 .top_content {
   text-align: center;
   margin-bottom: 50px;
+  
+  // @media (max-width: 800px) {
+  //   font-size: 1.1em;
+  // }
  }
 
  .recently {
@@ -75,11 +106,21 @@
   margin-top: 15px;
   padding-bottom: 15px;
   border-bottom: solid 2px #CBD0D3;
+
+  @media (min-width: 1000px) {
+    display: block;
+    text-align: center;
+  }
  }
  .news_record_right {
   display:block;
   height: 140px;
   margin-left: 15px;
+  height: auto !important;
+
+  @media (min-width: 1000px) {
+    text-align: left;
+  }
  }
  .news_record_right p {
   margin-top: 2px;
@@ -89,6 +130,11 @@
  .top_news_img {
    width: 200px;
    height: 140px;
+ }
+
+ .datestamp {
+   padding-top: 10px;
+   font-size: 0.9em;
  }
 
  .btn {
@@ -144,7 +190,9 @@
 
 
 @media (max-width: 600px) {
+
   .news_record {
+    font-size: 24px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 15px;

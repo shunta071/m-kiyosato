@@ -31,7 +31,7 @@
                   <div class="news_record_right">
                     <%= link_to(post.title, "/posts/#{post.id}") %>
                     <p><%= post.text.truncate(65) %></p>
-                    <p><%= simple_time(post.created_at) %></p>
+                    <p class="datestamp"> <%= simple_time(post.created_at) %></p>
                   </div>
               </div>
 
